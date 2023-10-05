@@ -1,0 +1,6 @@
+x = (input().split())
+print(x)
+y = map(int ,x)
+print(y)
+z = list(y)
+print(z)
