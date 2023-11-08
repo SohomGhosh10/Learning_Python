@@ -6,4 +6,4 @@ def factorial_recursive(n):
 
 n = 5
 result = factorial_recursive(n)
-print(f"{n}! = {result}")
+print(f"{n}! = {result}") # print(result)
