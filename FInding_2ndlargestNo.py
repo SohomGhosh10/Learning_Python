@@ -1,4 +1,4 @@
-
+# For finding 2nd largest number in a list
 
 n = int(input()) 
 arr = list(set(map(int, input().split()))) # arr = [2 , 3 , 6 , 6 ,5]
