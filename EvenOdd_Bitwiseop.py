@@ -4,7 +4,6 @@ def is_even_or_odd(number):
     else:
         return "Odd"
 
-# Example usage:
 num = 5
-result = is_even_or_odd(num)
-print(f"{num} is {result}")
+result = is_even_or_odd(num) 
+print(f"{num} is {result}") # odd
