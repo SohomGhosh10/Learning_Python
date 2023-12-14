@@ -1,5 +1,4 @@
 x = [10 , 20 , 30 , 40 , 50]
-y = [10 , 20 , 30 , 40 , 50]
-z = x
-print(x is z)
-print(x is y)
+print(x)
+print(20 in x)
+print(70 in x)
