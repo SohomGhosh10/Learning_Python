@@ -1,5 +1,5 @@
 def is_even_or_odd(number):
-    if number & 1 == 0:
+    if number & 1 == 0: # bitwise checking
         return "Even"
     else:
         return "Odd"
