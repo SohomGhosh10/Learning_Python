@@ -3,4 +3,4 @@ print(x)
 y = x
 print(y)
 z = x.copy()
-print(z)
+print(z) #[10 , 20 , 30 , 40 , 50]
