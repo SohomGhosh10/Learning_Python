@@ -1,3 +1,3 @@
 x = "Class"
 y = "room"
-print(x + y)
+print(x + y) # string concatenation
