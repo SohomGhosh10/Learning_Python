@@ -1,1 +1,1 @@
-Print("Sohom")
+print("Sohom") # prints name
