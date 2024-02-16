@@ -1,3 +1,3 @@
 s = "Classroom"
-print(s.lower())
-print(s.upper())
+print(s.lower()) # classroom
+print(s.upper()) # CLASSROOM
