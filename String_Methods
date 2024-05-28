@@ -1,0 +1,33 @@
+a = "Sohom"
+b = "Sohom!!!!!!!"
+c = "Sohom is a good boy"
+d = "introduction tO PythoN"
+str1 = "Welcome to the Console!!!"
+str2 = "Sohom !!! Sohom !!! Sohom !!!"
+str3 = "Sohom is a CSE student from UEM Kolkata"
+str4 = "Sohom10"
+
+
+print(len(a)) #length of string
+print(a.upper()) #converts string into upper case
+print(a.lower()) #converts string into lower case
+print(a.replace("Sohom" , "Ghosh")) #replaces string
+print(b.rstrip("!")) #strips the trailing character from the string
+print(c.split(" ")) #splits the string into list
+print(d.capitalize()) #capitalizes the first character of a string and rest of the characters in lower case
+print(str1.center(50)) #aligns the string to the center as per the parameters given by the user
+print(len(str1))
+print(len(str1.center(50)))
+print(str2.count("Sohom")) #counts the number of times the given value has occued in the string
+print(str1.startswith("!!!")) #checks if the string starts with the given value
+print(str1.endswith("!!!")) #check if the string ends with a given value
+print(str1.endswith("to",4 ,10)) #check if the string ends with a given value
+print(str3.find("CSE")) #finds the first occurence of the given value and returns the index where it is present
+print(str3.index("CSE")) #same as find
+#print(str3.index("CSEe")) # throws error if not present in the string
+print(a.isalnum()) #checks if the string consists of number or character
+print(str4.isalpha()) #checks if string consists of alphabets. Any kind of number or special characters is not considered
+print(a.islower()) #checks if all the characters are in lower case
+print(a.swapcase()) #changes the case of string. If the string is "Sohom" it will print "sOHOM"
+print(str1.title()) #returns true only if the first letter of each word of the string is capitalized
+print(a.isspace()) #checks if the string consists of white spaces
