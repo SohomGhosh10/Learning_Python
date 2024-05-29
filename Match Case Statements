@@ -14,6 +14,10 @@ match n:
   case 3:
     print("Your number is three")
 
-  case _:
-    print("Your number is greater than three")
+  case _ if n >= 5 and n < 7:
+    print("Your number is greater than five but less than seven")
+    print(n)
+
+  case _ if n >= 7 and n < 10:
+    print("Your number is greater then seven but less than ten")
     print(n)
