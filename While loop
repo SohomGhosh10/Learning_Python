@@ -1,0 +1,61 @@
+i = 1
+while i <= 5:
+  print(i, "Hello World")
+  i += 1
+print("Loop ended")
+
+j = 5
+while j >= 1:
+  print(j, "Hello")
+  j -= 1
+print("Loop ended")
+
+# Multiplication table
+
+num = int(input("Enter a number:"))
+
+i = 1
+
+while i <= 10:
+  print(num, "x", i, "=", num * i)
+  i += 1
+
+# Sum of n natural numbers
+
+n = int(input("Enter a number:"))
+i = 1
+sum = 0
+while i <= n:
+  sum = sum + i
+  i += 1
+print(sum)
+
+# printing a list and a tuple
+
+list = [1, 2, 3, 4, 5]
+
+i = 0
+while i <= len(list) - 1:
+  print(list[i])
+  i += 1
+
+# printing a tuple
+
+tuple = (1, 2, 3, 4, 5)
+
+i = 0
+while i < len(tuple):
+  print(tuple[i])
+  i += 1
+
+# printing an element of a tuple
+
+tuple = (1, 2, 3, 4, 5)
+
+i = 0
+num = int(input("Enter a number:"))
+
+while i < len(tuple):
+  if tuple[i] == num:
+    print("Found at index", i)
+  i += 1
