@@ -40,3 +40,14 @@ for el in x:
     print("Found at index", i)
   i += 1
   print(x)
+
+# Factorial
+
+n = int(input("Enter a number:"))
+i = 0
+fact = 1
+
+for i in range(1, n + 1):
+  fact = fact * i
+  i += 1
+print(fact)
