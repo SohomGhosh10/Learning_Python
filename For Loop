@@ -1,0 +1,42 @@
+colors = ['red', 'blue', 'green', 'yellow']
+for color in colors:
+  print(color)
+  for i in color:
+    print(i)
+
+i = 1
+for i in range(20):
+  print(i)
+
+for i in range(1, 20, 5):
+  print(i)
+
+str = "Sohom"
+
+for i in str:
+  if i == 'h':
+    break
+  print(i)
+print("END")
+
+for i in str:
+  if i == 'h':
+    continue
+  print(i)
+
+colors = ['red', 'blue', 'green', 'yellow']
+for color in colors:
+  if color == 'blue':
+    print("Found at index:", colors.index(color))
+    break
+  print(color)
+
+x = [1, 2, 3, 4, 5]
+n = 4
+i = 0
+
+for el in x:
+  if el == n:
+    print("Found at index", i)
+  i += 1
+  print(x)
