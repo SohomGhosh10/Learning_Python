@@ -1,0 +1,57 @@
+def sum(a, b):
+  return a + b
+
+
+a = sum(10, 20)
+print(a)
+
+
+def print_hello():
+  print("hello")
+
+
+print_hello()
+
+print("Sohom", "Ghosh")  # Sohom Ghosh
+print("Sohom", end="\n")  # end="\n" means next line
+print("Ghosh")
+
+
+def cal(a=1, b=1):  # default parameter have value 1
+  print(a * b)
+  return a * b
+
+
+cal()
+
+
+def cal(a, b=1):  # default parameter have value 1
+  print(a * b)
+  return a * b
+
+
+cal(1)
+
+a = ["A", "B", "C", "D", "E"]
+#print(a[0], end=" ")
+#print(a[1], end=" ")
+
+
+def print_list(a):
+  for i in a:
+    print(i, end=" ")
+
+
+print_list(a)
+
+
+def factorial(n):
+  fact = 1
+
+  for i in range(1, n + 1):
+    fact *= i
+  print(fact,end="\n")
+  print()
+
+
+factorial(5)
