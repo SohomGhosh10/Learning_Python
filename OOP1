@@ -1,5 +1,6 @@
 class A:
-  def __init__(self , fullname , marks):
+
+  def __init__(self, fullname, marks):
     self.fullname = fullname
     self.marks = marks
     print("Constructor is called")
@@ -7,53 +8,71 @@ class A:
   def welcome(self):
     print("Welcome student:", self.fullname)
 
-a = A("Sohom" , 95)
-print(a.fullname , a.marks)
+
+a = A("Sohom", 95)
+print(a.fullname, a.marks)
 a.welcome()
 
-b = A("Jiniya" , 87)
-print(b.fullname , b.marks)
+b = A("Jiniya", 87)
+print(b.fullname, b.marks)
 b.welcome()
 
-
+# static methods
 class Student:
-  def __init__(self , name , marks):
+
+  def __init__(self, name, marks):
     self.name = name
     self.marks = marks
-    
+
   @staticmethod
   def hello():
     print("hello")
-    
+
   def avg(self):
     sum = 0
     for i in self.marks:
       sum += i
-      
-    print("hi", self.name ,"avg is:", sum / 3)
 
-a = Student("Sohom" , [98 , 90 , 94])
+    print("hi", self.name, "avg is:", sum / 3)
+
+
+a = Student("Sohom", [98, 90, 94])
 a.avg()
 a.hello()
 
 
+# class methods
+class C:
+  name = "anonymous"
+
+  @classmethod  
+  def changeName(cls , name):
+    cls.name = name
+
+p1 = C()
+p1.changeName("Sohom")
+print(p1.name)
+
 # Bank account problem
 
+
 class Bank:
-  def __init__(self, name , balance , account_No):
+
+  def __init__(self, name, balance, account_No):
     self.name = name
     self.balance = balance
     self.account_No = account_No
 
-  def debit(self , amount):
+  def debit(self, amount):
     self.balance -= amount
-    print("Your amount of rupees ", amount , "has been debited")
-    print("Current balance" , self.balance)
+    print("Your amount of rupees ", amount, "has been debited")
+    print("Current balance", self.balance)
 
-  def credit(self , amount):
+  def credit(self, amount):
     self.balance += amount
-    print("Your amount of rupees ", amount , "has been credited")
-    print("Current balance" , self.balance)
+    print("Your amount of rupees ", amount, "has been credited")
+    print("Current balance", self.balance)
 
-a = Bank("Sohom" , 10000 , 12345)
+
+a = Bank("Sohom", 10000, 12345)
 a.debit(1000)
