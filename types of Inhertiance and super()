@@ -1,0 +1,88 @@
+# Single level inheritance
+
+class Car:
+  @staticmethod
+  def start():
+    print("Car started")
+
+  @staticmethod
+  def stop():
+    print("Car stopped")
+
+class BMW(Car):
+  def __init__(self, name):
+    self.name = name
+
+a1 = BMW("M3 GTR")
+a1.start()
+a1.stop()
+
+# Multilevel inheritance
+
+class Phone:
+  @staticmethod
+  def call():
+    print("Calling...")
+
+  @staticmethod
+  def text():
+    print("Texting...")
+
+  @staticmethod
+  def charging():
+    print("Charging...")
+
+class Andriod(Phone):
+  def __init__(self, name):
+    self.name = name
+
+class Samsung(Andriod):
+  def __init__(self , features):
+    self.features = features
+
+
+ab = Samsung("Samsung Galaxy S23")
+ab.call()
+ab.text()
+ab.charging()
+
+# Multilevel inheritance
+
+class A:
+  varA = "Hello A"
+
+class B:
+  varB = "Hello B"
+
+class C(A,B):
+  varC = "Hello C"
+
+c1 = C()
+print(c1.varA)
+print(c1.varB)
+print(c1.varC)
+
+
+class Car:
+
+  def __init__(self , type):
+    self.type = type
+    
+  @staticmethod
+  def start():
+    print("Car started")
+
+  @staticmethod
+  def stop():
+    print("Car stopped")
+
+class BMW(Car):
+  def __init__(self, name,type):
+    super().__init__(type)
+    self.name = name
+    super().start()
+
+a1 = BMW("M3 GTR" , "C")
+a1.start()
+a1.stop()
+print(a1.type)
