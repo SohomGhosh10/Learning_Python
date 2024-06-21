@@ -49,6 +49,24 @@ class C:
   def changeName(cls , name):
     cls.name = name
 
+# property decorator
+class Student:
+  def __init__(self , phy , chem , math):
+    self.phy = phy
+    self.chem = chem
+    self.math = math
+
+  @property
+  def percentage(self):
+    return str((self.phy + self.chem + self.math) / 3) + "%"
+
+a1 = Student(98 , 90 , 94)
+print(a1.percentage)
+
+a1.phy = 86
+a1.math = 100
+print(a1.percentage)
+
 p1 = C()
 p1.changeName("Sohom")
 print(p1.name)
